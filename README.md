@@ -1,3 +1,6 @@
+---
+path: declarative-dom
+---
 Inspired by front-end frameworks and [this lecture slide](http://kedwards.com/classes/AY2016/cs4470_fall/slides/9-Damage%20and%20Layout.pdf#page=35) from *CS 4470/6456: User Interface Software @ Georgia Tech* 
 
 # Design Philosophy
