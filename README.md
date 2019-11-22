@@ -3,7 +3,7 @@ path: /github/declarative-dom
 ---
 Inspired by front-end frameworks and [this lecture slide](http://kedwards.com/classes/AY2016/cs4470_fall/slides/9-Damage%20and%20Layout.pdf#page=35) from *CS 4470/6456: User Interface Software @ Georgia Tech* 
 
-# Design Philosophy
+# Architecture
 It's my understanding that UI programming is about *synchronizing UI state and the underlying application state, which is inaccessible to users*. In other words, it's about managing state dependencies: Whenever a variable changes value, all other variables depending on it need to be reevaluated to reflect that change &mdash; *this is best modeled as an **(acyclic) [dependency graph](https://en.wikipedia.org/wiki/Dependency_graph)***. Under the imperative paradigm, this synchronization is carried out manually, the dependency relations hidden in the control flow. As the dependencies become increasingly complex, perhaps it's easier to manage dependency relations by *declaring them explicitly and off-loading the actual updates to an underlying mechanism that propagates state changes along the directed edges of the dependency graph*.
   
 ## Implementation
